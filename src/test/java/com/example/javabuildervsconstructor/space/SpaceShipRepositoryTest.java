@@ -15,17 +15,19 @@ public class SpaceShipRepositoryTest {
     @Test
     public void trystuff(){
         System.out.println("BEGIN TEST");
-//        spaceShipRepository.deleteAll();
+        spaceShipRepository.deleteAll();
+        SpaceShip spaceShip = new SpaceShip( "modelfromconstructor", 8.0d);
+//        SpaceShip spaceship = spaceShip.captain("Mike").fuel(10.0d).model("Round");
+//        SpaceShip.SpaceShipBuilder builder = spaceShip.toBuilder();
 //        SpaceShip.SpaceShipBuilder builder = SpaceShip.builder()
-//                .captain("Mike")
-//                .fuel(72.2d)
-//                .model("Pyramid");
-//
+//                .model("Pyramid")
+//                .fuel(72.2d);
+
+//        spaceShipRepository.save(spaceShip);
 //        spaceShipRepository.save(builder.build());
+//        spaceShipRepository.save(builder.captain("Mike").build());
+//        spaceShipRepository.save(builder.fuel(10.0d).build());
 //        spaceShipRepository.save(builder.model("Round").build());
-//        spaceShipRepository.save(builder.model("Cube").build());
-//        spaceShipRepository.save(builder.model("Sourcer").build());
-//        spaceShipRepository.save(builder.captain("Susan").build());
 
 
         for (SpaceShip ship : spaceShipRepository.findAll()) {
